@@ -51,6 +51,15 @@ a {
   padding-left: 5rem;
 }
 
+.main {
+  font-size: 50px;
+}
+
+.s {
+  font-size: 33px;
+  font-weight: normal;
+}
+
 .red {
   color: crimson;
 }
@@ -137,4 +146,34 @@ a {
 }
 [data-aos="reveal-item"].aos-animate {
   visibility: visible;
+}
+
+@media only screen and (max-width: 700px) {
+  .contents {
+    left: 45%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main {
+    font-size: 40px;
+  }
+  .s {
+    font-size: 26.5px;
+  }
+  
+  .contents {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .main {
+    font-size: 30px;
+  }
+  .s {
+    font-size: 20px;
+  }
 }
